@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion</title>
+
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app1.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head> 
+
+<body onLoad="MM_preloadImages('imagenes/definicion2.jpg','imagenes/definicion4.png','imagenes/telefonoh3.jpg','imagenes/telefonoh4.jpg','imagenes/telefoniacelular2.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+    <h1>Telefonía Celular En México</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Teléfono Celular</h1>
+      <div>
+       <p>¿Qué hacíamos cuando no teníamos móviles y alguien no daba señales de vida en muchas horas? Lo que es seguro es que vivíamos con menos ansiedad.</p>
+       <br>
+      </div>
+      <div> 
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('telefonia','','imagenes/telefoniacelular2.jpg',1)"><img src="imagenes/telefoniacelular1.jpg" width="400" height="400" id="telefonia"></a> </div> 
+     </div>
+    </div>
+    <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child"> 
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Definición</h2>
+       <p>¿Qué es el teléfono celular?</p>
+      </a>
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Historia</h2>
+       <p>Historia del teléfono celular</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Clasificacion</h2>
+       <p>¿Cómo se clasifican los teléfonos celulares?</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Compañias</h2>
+       <p> Compañias de los teléfonos celulares</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Teléfonos del futuro</h2>
+       <p>¿Qué teléfonos veremos en el futuro?</p>
+      </a>
+     </li>
+     </ul>
+    </div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+     <div>
+      <img src="imagenes/logo.png" width="46" height="46">
+     </div>
+     <div>
+      <h4>Aplicación Dos</h4>
+      <h4>Jaime Flores Feliciano</h4>
+     </div>
+    </div>
+   </div>
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Definición</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Definición 1</h1>
+       <div data-role="content" align="center">
+      <p>La palabra celular es modernamente aplicada a los teléfonos móviles, que son dispositivos electrónicos inalámbricos, y a la telefonía celular móvil, que permite el funcionamiento de esos aparatos o celulares, para poder alcanzar el propósit comunicacional para el que han sido creados.
+Si bien existen redes telefónicas satelitales móviles, el nombre celular proviene de la red de antenas repetidoras        organizadas en red, donde cada antena es una célula interconectada en forma de malla, que realizan el enlace entre los aparatos y las estaciones de base. Las estaciones receptan las frecuencias y las transmiten de unas células o estaciones a otras, hasta llegar al destino requerido. Las redes de telefonía móvil pueden ser analógicas o digitales.</p>
+     <div>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/definicion2.jpg',1)"><img src="imagenes/definicion1.jpg" width="50%" height="50%" id="Image5"></a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Definición 2</h1>
+     <p>La telefonía móvil, también llamada telefonía celular, básicamente está formada por dos grandes partes: una red de comunicaciones (o red de telefonía móvil) y los terminales (o teléfonos móviles) que permiten el acceso a dicha red.</p>
+     <div>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('definicion2','','imagenes/definicion4.png',1)"><img src="imagenes/definicion3.jpg" width="640" height="387" id="definicion2"></a></p>
+     </div>
+     </div>  
+    <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicación Dos, JFF</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Historia</h1>
+     <p>El 3 de abril de 1973,18 Martín Cooper directivo de Motorola realizó la primera llamada desde un teléfono móvil del proyecto DynaTAC 8000X desde una calle de Nueva York.19 precisamente a su mayor rival en el sector de telefonía: Joel Engel, de los Bell Labs de AT&T.
+
+El DynaTAC 8000X es presentado oficialmente en 1984, año en que se empezó a comercializar. El teléfono pesaba cerca de 1 kg, tenía un tamaño de 33.02 x 4,445 x 8,89 centímetros y su batería duraba una hora de comunicación o una jornada laboral (ocho horas) en espera, con pantalla led.
+
+Ameritech Mobile Communications, LLC fue la primera empresa en los EE.UU. en proporcionar servicio de telefonía móvil al público general.
+
+En 1981 el fabricante Ericsson lanza el sistema NMT 450 (Nordic Mobile Telephony 450 MHz). Este sistema seguía utilizando canales de radio analógicos (frecuencias en torno a 450 MHz) con modulación en frecuencia (FM). Era el primer sistema del mundo de telefonía móvil tal como se entiende hasta hoy en día.
+
+Los equipos 1G pueden parecer algo aparatosos para los estándares actuales pero fueron un gran avance para su época, ya que podían ser trasladados y utilizados por una única persona.
+
+En 1986, Ericsson modernizó el sistema, llevándolo hasta el nivel NMT 900. Esta nueva versión funcionaba prácticamente igual que la anterior pero a frecuencias superiores (del orden de 900 MHz). Esto posibilitó dar servicio a un mayor número de usuarios y avanzar en la portabilidad de los terminales.
+
+Además del sistema NMT, en los 80 se desarrollaron otros sistemas de telefonía móvil tales como: AMPS (Advanced Mobile Phone System) en EE. UU. y TACS (Total Access Comunication System.)</p>
+      </div>
+     <div data-role="content" align="center">
+      <div>
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>Celular 1</h1>
+      <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust1','','imagenes/telefonoh3.jpg',1)"><img src="imagenes/telefonoh1.jpg" width="310" height="310" id="sust1"></a> </div>
+      </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>Celular 2</h1>
+      <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust2','','imagenes/telefonoh4.jpg',1)"><img src="imagenes/telefonoh2.jpg" width="500" height="500" id="sust2"></a> </div>
+      </div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicación Dos, JFF</h4>
+    </div> 
+    </div>
+    </div>
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Clasificación de celulares</h1>
+     </div>
+     <div data-role="content" align="center">
+     <div>
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Gama Baja</h1>
+     <div data-role="content" align="center">
+      <img src="imagenes/gamabaja.jpg">
+      <p>Suelen ser pequeños, Tienen funciones básicas o las funciones que traen ya no están a la altura de un SmartPhone , Precios muy economicos
+Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.
+</p>
+</div>
+  </div>
+   </div>
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Gama Media</h1>
+      <div>
+      <img src="imagenes/gamamedia.png">
+      <p>Suelen ser muy equilibrados en sus características:
+      Generalmente no superan los 500 dólares en precio (como mucho).
+      Tienen algunas funciones de la gama alta del momento.
+	Los materiales ya son de calidad aceptable.
+	Pantallas que no superan las 4.5 pulgadas (en promedio).
+    Cámaras de 3 a 5 Mpx
+	Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM</p>
+  </div>
+    </div>
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Gama Alta</h1>
+      <div>
+      <img src="imagenes/gamaalta.jpg">
+      <p>Aqui se ubican los mejores , puedes hasta lavarte los dientes, se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usuario si no elige con cuidado, algunas de sus cracterísticas son:
+      Pantalla de 4 pulgadas en delante,
+      Memoria interna desde 16GB,
+      Diseñados para redes 4G,
+      Cámaras de calidad desde 8Mpx,
+      Desde 800 dólares en adelante.</p>
+  </div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicación Dos, JFF</h4>
+    </div>
+    </div>
+    </div>
+   
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b"> 
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Compañias</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Telcel</h1>
+       <div data-role="content" align="center">
+      <a href="http://www.telcel.com/"><img src="imagenes/compania1.jpg" width="400" height="400" alt="telcel"></a>
+</div>
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+      <h1>Movistar</h1>
+  <a href="http://www.movistar.com.mx/"><img src="imagenes/compania2.png" width="400" height="314" alt="movistar"></a>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+      <h1>Iusacell</h1>
+    <a href="https://web.iusacell.com.mx/PortalAutoservWeb/"><img src="imagenes/compania3.jpg" width="740" height="414" alt="iusacell"></a>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>At&t</h1>
+      <a href="https://www.att.com.mx"><img src="imagenes/compania4.png" width="400" height="400" alt="AT&amp;T"></a>
+ </div>
+ <div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Aplicación Dos, JFF</h4>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Teléfonos del futuro</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Proyecto Ara</h1>
+      <div data-role="content" align="center">
+     <img src="imagenes/telefonof4.jpg" width="600" height="375" alt="proyecto ara">
+      <p>El Proyecto Ara es la visión de Google con respecto al futuro de los teléfonos inteligentes. En lugar de tener que comprar un nuevo dispositivo cada pocos años —esto con el fin de obtener las mejores y más recientes actualizaciones y especificaciones— la compañía quiere impulsar los llamados teléfonos modulares. Esto significa que si la tecnología del altavoz o de la cámara mejoran, podrás simplemente comprar esas partes y ponerlas teléfono, sustituyendo los módulos antiguos.</p>
+</div>
+ </div>
+ </div>
+  <div data-role="collapsible" data-content-theme="false">
+      <h1>Nokia aeon</h1>
+      <img src="imagenes/telefonof7.jpg" width="390" height="295" alt="nokia aeon">
+      <p>Pero para que, si ahora Hollywood nos hace la vida más fácil, llevando nuestra paranoia hasta los siempre vilipendiados terrenos fílmicos. ¿Y quién creen que le tiende una mano usando nuestro más querido y recurrente gadget? Nada menos que Nokia, que imagina a uno de sus prototipos, el teléfono Aeon, como el privilegiado instrumento de la conspiración.</p>
+      </div>
+<div data-role="collapsible" data-content-theme="false">
+      <h1> Sony Ericsson Concept Phone </h1>
+      <img src="imagenes/telefonof6.jpg" width="425" height="272" alt="sony">
+      <p>Realmente no se sabe si este concepto se ha puesto en marcha, pero de verdad es esperado por muchos. 
+
+Lo único que se sabe hasta el momento es que contará con una camara de 3.2 megapixeles, 2GB de almacenamiento y una radio FM incorporada. Es ultra delgado y con detalles color plata y negro. 
+</p>
+    </div>  
+<div data-role="collapsible" data-content-theme="false">
+  <h1>Black Box Concept Phone de BenQ-Siemens  </h1>
+      <img src="imagenes/telefonof8.jpg" width="300" height="300" alt="black">
+      <p>Un terminal con un diseño espectacular, que incluye un “layout” personalizado, con los botones de las funciones que más utiliza el usuario. BenQ-Siemens está trabajando mucho en los diseños y funcionalidades que incluirán los teléfonos del futuro, y aquí tenemos una de sus creaciones. 
+</P>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicación Dos, JFF</h4>
+    </div>
+  </div>
+  </div>
+                                    
+</body>
+</html>
